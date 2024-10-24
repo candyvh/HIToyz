@@ -1,0 +1,634 @@
+:root {
+    --yellowBase : #FEC42E;
+    --greyStroke : #A5A5A5;
+    --blueBase : #1F2A3B;
+    --blueVar : #2F3D52;
+    --orangeBtn : #FF9900;
+    --black : #000000;
+    --white : #FFFFFF;
+}
+
+* {
+    padding : 0;
+    margin : 0;
+   
+}
+body{
+    width: 100vw !important;
+    height: 200vh;
+}
+
+/* FRAME 1 START */
+.frame1 {
+    height: 110vh;
+    width: 100vw;
+}
+
+/* NAVBAR START */
+.navbar {
+    width: 100%;
+    height: 62px;
+    background-color: #FEC42E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 5;
+}
+
+.logo img {
+    width: 219px;
+    height: 144.14px;
+    /* width: 119px;
+    height: 44px; */
+}
+
+.logo {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar ul {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo ul li {
+    list-style: none;
+}
+
+.logo ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-family: "inter", sans-serif;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.logo ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #000000;
+    margin: auto;
+    display: block;
+}
+
+.logo ul li a:hover::after {
+    width: 100%;
+    transition: width 0.1s linear;
+}
+
+.register {
+    width: 25%;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.register a {
+    text-decoration: none;
+    color: #000000;
+    font-family: "inter", sans-serif;
+    font-size: 19px;
+}
+
+.register a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #000000;
+    margin: auto;
+    display: block;
+}
+
+.register a:hover::after {
+    width: 100%;
+    transition: width 0.1s linear;
+}
+
+.profileIcon img{
+    width: 34px;
+    height: 34px;
+}
+
+.shopIcon img{
+    width: 38x;
+    height: 34px;
+}
+/* NAVBAR END */
+
+/* HEADER START */
+.headerWrap {
+    width: 100%;
+    height: 248px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#FEC42E;
+}
+
+.headert{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: "inter", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.imgStoreWrap {
+    width: 65%;
+    height: 248px;
+    background-image: url(Pict/Store1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* HEADER END */
+
+
+
+/* wrapper1 */
+.wrapper1 {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #1F2A3B;
+}
+
+.override {
+    height: 75%;
+    position: absolute;
+    z-index: 2;
+    padding-right: 20%;
+}
+
+
+/* wrapper1 */
+
+
+/* start event banner */
+.eventBanner-wrap {
+    width: 100vw;
+    height: 300px;
+    /* background-color: #FEC42E; */
+    background-image: url(Pict/eventImgDarken.png);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+
+.titleEvent-Wrap {
+    width: 15%;
+    height: 100%;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #FF9900;
+}
+
+.titleEvent-Wrap h6 {
+    color: #FFFFFF;
+    font-family: "inter", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 30%;
+}
+
+.eventText-wrap {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FF9900;
+    font-family: "Irish Grover", cursive;
+    font-size: 65px;
+    text-align: center;
+    text-shadow: #000000 5px 3px 5px;
+}
+
+/* .eventBanner-wrap p {
+    stroke: #000000;
+    stroke-width: 5px;
+} */
+
+/* .eventText-wrap h6 a {
+    text-decoration: none;
+    color:  #FFFFFF;
+}
+.eventText-wrap h6 {
+    font-family: "inter", sans-serif;
+    font-size: 15px;
+}
+
+.eventText-wrap h6::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin: auto;
+    display: block;
+}
+
+.eventText-wrap h6:hover::after {
+    width: 100%;
+    transition: width 0.1s linear;
+} */
+
+.wheelPict-wrap {
+    width: 25%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 30px;
+    z-index: 3;
+    margin-right: 3%;
+}
+
+.wheelPict-wrap img {
+    /* width: 320px; */
+    height: 330px;
+    filter: drop-shadow(5px 3px 5px #000000);
+}
+/* end event banner */ 
+
+/* spin section start */
+.discountTitle {
+    width: 100%;
+    height: 100px;
+    background-color: #1F2A3B;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-family: "inter", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.wrapper2 {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    background-color: #1F2A3B;
+}
+
+.wheelContainer {
+    width: 45%;
+    /* background-color: #A5A5A5; */
+}
+
+.leftContainer {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.divider1 {
+    height: 35%;
+}
+
+.eventTnC-wrap {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventTnC-wrap h6 {
+    font-family: "inter", sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+.eventTnC-wrap p {
+    font-family: "inter", sans-serif;
+    font-size: 13px;
+    color: white;
+}
+
+.eventDuration-wrap {
+    height: 25%;
+    display: flex;
+    /* background-color: #A5A5A5; */
+    justify-content: center;
+    align-items: center;
+    font-family: "inter", sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+
+/* discount section end */
+
+
+
+/* start footer */
+.footer-wrap {
+    width: 100vw;
+    height: 300px;
+    background-color: #1F2A3B;
+}
+.footerTop {
+    width: 100%;
+    height: 70%;
+    /* display: flex; */
+    /* background-color: #A5A5A5; */
+}
+
+.footerTopTop {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    align-items: end;
+    font-family: "inter", sans-serif;
+    font-size: 25px;
+    color: #A5A5A5;
+}
+
+.footerMid {
+    width: 100%;
+    height: 60%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerBox1 {
+    width: 25%;
+    height: 50%;
+    /* background-color: #FFFFFF; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerLogo-wrap {
+    width: 100px;
+    height: 50px;
+    background-color: #FEC42E;
+}
+
+.footerLogo-wrap img {
+    width:100px;
+    height:50px;
+}
+
+.register-wrap {
+    width: 150px;
+    height: 50px;
+    background-color: #A5A5A5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "inter", sans-serif;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.register-wrap:hover {
+    box-shadow: 0 0 5px rgb(224, 221, 221);
+}
+
+.register-wrap a {
+    text-decoration: none;  
+    color: #000000; 
+}
+
+.footerBtm {
+    width: 100%;
+    height: 20%;
+    /* background-color: #000000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* end footer */
+/* discount section end */
+
+@media screen and (max-width: 768px) {
+    .frame1 {
+        height: auto;
+    }
+
+    .logo {
+        width: 60%;
+    }
+    .logo img {
+        width: 150px;
+        height: auto;
+    }
+
+    .navbar ul {
+        width: 70%;
+        justify-content: space-evenly;
+    }
+
+    /* .navbar ul li a {
+        font-size: 13px;
+
+    } */
+
+    .register {
+        width: 30%;
+    }
+
+    .profileIcon {
+        width: auto;
+        height: auto;
+    }
+
+    .shopIcon{
+        width: auto;
+        height: auto;
+    }
+    
+    .headerWrap {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .headert {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    /* wrapper1 */
+    .wrapper1 {
+        width: 95%;
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    }
+
+    .wrapper1 img {
+        width: 60%;
+        height: auto;
+    }
+    
+    .override {
+    position: static;
+    width: 40%;
+    height: 300px;
+    padding-right: 0;
+    }
+
+    /* start event banner */
+    .eventBanner-wrap {
+        width: 95%;
+        height: 500px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-size: cover;
+        background-position: center;
+        /* background-image: none; */
+        
+        }
+        
+        .titleEvent-Wrap {
+        width: 100%;
+        height: 20%;
+        justify-content: center;
+        align-items: center;
+        background-color: #FF9900;
+        }
+        
+        .titleEvent-Wrap h6 {
+        padding-top: 10px;
+        }
+        
+        .eventText-wrap {
+        width: 100%;
+        height: 40%;
+        font-size: 40px;
+        }
+        
+        .eventText-wrap h6 {
+        font-size: 12px;
+        }
+        
+        .wheelPict-wrap {
+        width: 100%;
+        height: 40%;
+        padding-right: 0;
+        display: flex;
+        justify-content: center;
+        }
+        
+        .wheelPict-wrap img {
+        width: 30%;
+        height: 100%;
+        }
+        /* end event banner */
+
+    /* spin section start */
+    .discountTitle {
+    font-size: 25px;
+    }
+    
+    .wrapper2 {
+    flex-direction: column;
+    height: auto;
+    }
+    
+    .wheelContainer {
+    width: 100%;
+    }
+    
+    .leftContainer {
+    width: 100%;
+    height: auto;
+    }
+    
+    .divider1 {
+    display: none;
+    }
+    
+    .eventTnC-wrap {
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    }
+    
+    .eventTnC-wrap h6 {
+    font-size: 12px;
+    }
+    
+    .eventTnC-wrap p {
+    font-size: 10px;
+    }
+    
+    .eventDuration-wrap {
+    font-size: 20px;
+    padding: 10px;
+    }
+    /* discount section end */
+    
+    
+    /* start footer */
+    .footer-wrap {
+        height: 200px;
+        padding-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footerTopTop {
+        /* flex-direction: column; */
+        align-items: center;
+        gap: 10px;
+        font-size: 18px;
+    }
+
+    .footerMid {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footerBox1 {
+        width: 80%;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .register-wrap {
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+}
